@@ -15,7 +15,7 @@ import java.io.IOException;
 public class test {
     public static void main(String[] args) throws IOException {
         RestHighLevelClient esClient = new RestHighLevelClient(
-                RestClient.builder(new HttpHost("www.falltwo.com",9200,"http"))
+                RestClient.builder(new HttpHost("falltwo.com",9200,"http"))
         );
 
         esClient.close();
